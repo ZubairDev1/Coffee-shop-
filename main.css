@@ -1,0 +1,152 @@
+body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+    }
+    
+    header {
+     background-color: #3f291e;
+     padding: 20px;
+     color: #fff;
+    }
+    
+    nav ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+    }
+    
+    nav ul li {
+     display: inline;
+     margin-right: 10px;
+    }
+    
+    nav ul li a {
+     color: #fff;
+     text-decoration: none;
+    }
+    
+    section {
+     padding: 110px;
+    }
+
+    .img{
+        background-image: url(./img/jeremy-ricketts-6ZnhM-xBpos-unsplash.jpg);
+        object-fit: contain;
+    }
+    
+    #home {
+     text-align: center;
+    }
+    
+    #home h1 {
+     font-size: 36px;
+    }
+    
+    .cta-button {
+     display: inline-block;
+     padding: 10px 20px;
+     background-color: #3f291e;
+     color: #fff;
+     text-decoration: none;
+     transition: all 0.5s;
+     margin-top: 20px;
+    }
+
+    .cta-button span{
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .cta-button span::after{
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .cta-button:hover span{
+        padding-right: 15px;
+    }
+
+    .cta-button:hover span::after{
+        opacity: 1;
+        right: 0;
+    }
+    
+    #menu {
+     text-align: center;
+    }
+    
+    .menu-item {
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+     display: inline-block;
+     margin: 30px;
+    }
+    
+    .menu-item img {
+     width: 200px;
+     height: 200px;
+     object-fit: cover;
+    }
+    
+    #about {
+    background-image: url(./img/sixteen-miles-out-dPkn4562j3E-unsplash.jpg);
+     text-align: center;
+    }
+    
+    #contact form input,
+    #contact form textarea {
+     display: block;
+     margin-bottom: 10px;
+     width: 100%;
+     padding: 10px;
+    }
+    
+    #contact form input[type="submit"] {
+     background-color: #3f291e;
+     color: #fff;
+     border: none;
+     cursor: pointer;
+    }
+    
+    footer {
+     background-color: #3f291e;
+     padding: 20px;
+     color: #fff;
+     text-align: center;
+    }
+
+    @media screen and (max-width:768px) {
+        header {
+            padding: 10px;
+        }
+
+        nav ul li{
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        section {
+            padding: 30px;
+        }
+
+        #home h1 {
+            font-size: 24px;
+        }
+
+        .menu-item {
+            display: block;
+            margin: 20px auto;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+        }
+
+    }
